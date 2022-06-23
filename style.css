@@ -1,0 +1,237 @@
+*{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-decoration: none;
+    margin: none;
+    padding: none;
+}
+body{
+    background-color: white;
+    color: white;
+    letter-spacing: 0.5px;
+}
+::-webkit-scrollbar{
+    width: 3px;
+}
+::-webkit-scrollbar-track{
+    background-color: black;
+}
+::-webkit-scrollbar-thumb{
+    background-color: white;
+}
+:root{
+    -gradient: linera-gradient(to right, red, green)
+}
+.slidebar{
+    position: fixed;
+    width: 300px;
+    height: 300vh;
+    background-color: rgb(103, 98, 98);
+    padding: 20px;
+    z-index: 1000;
+}
+.logo img{
+    width: 150px;
+}
+.profile{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+.profile-img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90px;
+    width: 90px;
+    border: 2px solid red;
+    border-radius: 50px;
+}
+.profile-img img{
+    width: 80px;
+    height: 80px;
+    border: 0.5px solid black;
+    border-radius: 50px;
+}
+.name{
+    display: flex;
+    align-items: center;
+    margin: auto;
+    color: white;
+}
+.name h2{
+    font-size: 20px;
+    font-weight: 500px;
+}
+.profile span{
+    font-size: 15px;
+}
+.about{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+.posts{
+    text-align: center;
+}
+.posts h3{
+    font-size: 1rem;
+    font-weight: 500px;
+}
+.posts span{
+    font-size: 0.98rem;
+}
+.menu{
+    margin-top: 15px;
+    margin-left: 5px;   
+}
+.menu .icon{
+    margin-right: 1rem;
+    font-size: 20px;
+}
+.icon img{
+    height: 20px;
+    width: 20px;
+}
+.menu a{
+    align-items: center;
+    display: flex;
+    width: 100%;
+    font-size: 1rem;
+    line-height: 30px;
+    color: white;
+}
+.menu a:hover,
+.menu .active{
+    color: red;
+}
+.menu a:hover::before,
+.menu .active::before{
+    content: '';
+    position: absolute;
+    height: 18px;
+    width: 2px;
+    right: 0;
+    background-color: red;
+}
+
+.main-home{
+    position: absolute;
+    width: calc(100% - 300px);
+    margin-left: 340px; 
+    background-color: rgb(80, 60, 60);    
+    top: 0;
+    min-width: 100vh;
+    padding: 20px;
+    overflow: hidden;
+}
+.header{
+    display: flex;
+    align-items: center;
+    width: calc(100% - 300px);
+    justify-content: space-between;
+}
+.search{
+    display: flex;
+    align-items: center;
+    background-color: black;
+    width: 250px;
+    height: 1.5rem;
+    padding: 10px;
+    border-radius: 10px;
+}
+.search input{
+    border: none;
+    outline: none;
+    background: transparent;
+    margin-left: 6px;
+}
+.search input::placeholder{
+    color: white;
+}
+.search i{
+    font-size: 20px;
+    color: white;
+}
+.header-content{
+    display: flex;
+    align-items: center;
+    margin-right: -200px;
+}
+.header-content i{
+    color: white;
+    font-size: 20px;
+    margin-left: 1rem;
+}
+.header-content .btn{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-radius: 8px;
+    background: linear-gradient(to right, red , yellow);
+    margin-left: 1rem;
+}
+.header-content .btn i{
+    color: black;
+    margin-right: 10;
+}
+.btn-text{
+    color: white;
+}
+.stories-title{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+.stories-title h2{
+    font-size: 1.8rem;
+    letter-spacing: 1px;
+}
+.stories-title .btn{
+    display: flex;
+    align-items: center;
+    color: white;
+    margin-right: 100px;
+}
+.stories-title .btn i{
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+.stories{
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+.stories-img{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    object-position: center;
+}
+.stories-img img{
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+    border-radius: 50%;
+    object-position: center;
+}
+.stories-img.color{
+    border: 2px solid white;
+}
+.stories-img .add{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    color: white;
+}
